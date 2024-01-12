@@ -1,0 +1,128 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* nav start */
+.Nav{
+display: flex;
+align-items: center;
+padding: 10px 40px;
+
+}
+.f-nav{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.f-nav img{
+    width: fit-content;
+    height: 60px;
+}
+.f-nav h3{
+    cursor: pointer;
+}
+.s-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+
+}
+.s-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 40px;
+    list-style: none;
+}
+.s-nav ul li a{
+    color: black;
+    font-size: 19x;
+    position: relative;
+    font-weight: bold;
+}
+.s-nav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(29, 28, 28);
+    height: 3px;
+    width: 0%;
+    right: 0;
+    top: 30px;
+}
+
+.s-nav ul li a:hover::after{
+    width: 100%;
+}
+.searchInp{
+    position: relative;
+    width: 25%;
+}
+#search{
+    padding:20px 15px;
+    padding-right: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+}
+
+.searchInp label{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(29, 28, 28);
+    height: 3px;
+    width: 100%;
+    right: 0;
+    top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav end */
+/* main start */
+#home{
+    height: 100vh;
+    background: #ce4242;
+}
+#about{
+    background: #5e2d2d;
+    height: 100vh;
+}
+#courses{
+    background: #d8aeae;
+    height: 100vh;
+}
+#contact{
+    background: #d8aeae;
+    height: 100vh;
+}
+/* main end */
+/* footer start */
+.Footer{
+    height: 40vh;
+    background: gray;
+}
+/* footer enc */
