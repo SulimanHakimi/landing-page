@@ -104,19 +104,30 @@ padding: 10px 40px;
 /* nav end */
 /* main start */
 #home{
-    height: 100vh;
-    background: #ce4242;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cacaca;
+    height: 100vh;}
 #about{
-    background: #5e2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cacaca;
     height: 100vh;
 }
 #courses{
-    background: #d8aeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cacaca;
     height: 100vh;
 }
 #contact{
-    background: #d8aeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cacaca;
     height: 100vh;
 }
 /* main end */
