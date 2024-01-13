@@ -61,7 +61,7 @@ background: rgb(241, 240, 240);
 
 .s-nav ul li a:hover::after{
     width: 100%;
-    transition: 1s;
+    transition: .8s;
 
 }
 .searchInp{
