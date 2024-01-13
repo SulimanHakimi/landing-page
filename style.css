@@ -41,7 +41,7 @@ background: rgb(241, 240, 240);
     justify-content: center;
     align-items: center;
     width: 75%;
-    gap: 40px;
+    gap: 50px;
     list-style: none;
 }
 .s-nav ul li a{
