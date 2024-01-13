@@ -121,11 +121,12 @@ background: rgb(241, 240, 240);
     width: 40px;
 }
 #bars-ul .searchInp input{
+    padding: 20px 30px;
     width: 250px;
 }
 #bars-ul .searchInp label{
-left: 140px;
-top: 10px;
+left: 155px;
+top: 13px;
 }
 
 /* nav end */
@@ -200,7 +201,7 @@ top: 10px;
         cursor: pointer;
     }
     .bug{
-        width: 60px;
+        width: 50px;
         transform: rotate(-135deg);  
     }
 
