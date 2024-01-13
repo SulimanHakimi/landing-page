@@ -128,6 +128,7 @@ background: rgb(241, 240, 240);
 @media screen and (max-width: 800px) {
     .Nav{
         justify-content: space-between;
+        padding: 10px 20px;
     }
     .f-nav{
         width: 75%;
