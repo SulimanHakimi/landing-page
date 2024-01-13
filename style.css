@@ -67,6 +67,8 @@ background: rgb(241, 240, 240);
 }
 .searchInp{
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 25%;
 }
 
@@ -118,19 +120,19 @@ background: rgb(241, 240, 240);
     top: 0;
     width: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
+#bars-ul .searchInp input{
+    width: 250px;
+}
+#bars-ul .searchInp label{
+left: 140px;
+top: 10px;
+}
 
 /* nav end */
+
+
+
+
 /* main start */
 .Main{
     height: 100vh;
@@ -150,6 +152,38 @@ background: rgb(241, 240, 240);
 }
 
 /* footer end */
+
+@media screen and (max-width: 1000px){
+    .Nav{
+        padding: 10px 20px;
+    }
+    .f-nav{
+        width: 40%;
+    }
+    .s-nav{
+        width: 60%;
+    }
+    .s-nav ul{
+        width: 60%;
+        gap: 30px;
+    }
+    
+    .searchInp{
+        width: 25%;
+    }
+    #search{
+        padding:0px 15px;
+        width: 150px;
+    }
+    
+    .searchInp label{
+        top: 10px;
+        right: 0px;
+    }
+    .bug{
+        width: 50px;
+    }
+}
 @media screen and (max-width: 800px) {
     .Nav{
         justify-content: space-between;
@@ -169,4 +203,5 @@ background: rgb(241, 240, 240);
         width: 60px;
         transform: rotate(-135deg);  
     }
+
 }
