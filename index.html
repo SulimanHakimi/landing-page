@@ -16,22 +16,31 @@
         </div>
         <div class="s-nav">
             <ul>
-                <li><a class="home" href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Courses</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="searchInp">
                 <input type="text" placeholder="search..." name="searchInput" id="search">
-                <label id="searchIcon" for="search"><img src="./images/magnifying-glass-solid.svg" alt=""></label>
+                <label id="searchIcon" onclick="searchBtn()" for="search"><img src="./images/magnifying-glass-solid.svg" alt=""></label>
             </div>
         </div>
         <div class="bars">
-         <img src="./images/bars-solid.svg" alt="">
+         <img id="bar" onclick="navShow()" src="./images/bars-solid.svg" alt="">
+         <img id="x" onclick="navHide()" src="./images/x-solid.svg" alt="">
+
         </div>
     </div>
+    <ul id="bars-ul">
+        <img class="bug" src="./images/bug-solid.svg" alt="bug">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+     </ul>
         <div class="Main">
-           <img src="./images/bug-solid.svg" alt="bug">
+           <img class="bug" src="./images/bug-solid.svg" alt="bug">
            <div></div>
            <div></div>
         </div>
@@ -42,11 +51,26 @@
 
 
 
-    <script>
-        let searchBtn = document.getElementById("searchIcon")
-        searchBtn.addEventListener("click", ()=>{
+    <script>    
+        function searchBtn(){
             alert("The Search engine is now actived")
-        })
+        }
+        let nav = document.getElementById('bars-ul')
+        let bar = document.getElementById('bar')
+        let x = document.getElementById('x')
+        let main = document.getElementsByClassName("Main")
+       function navShow(){
+        nav.style.display = "flex"
+        bar.style.display = "none"
+        x.style.display = "flex"
+        main.style.display = "none"
+
+       }
+       function navHide(){
+        nav.style.display = "none"
+        bar.style.display = "flex"
+        x.style.display = "none"
+       }
     </script>
 </body>
 </html>
