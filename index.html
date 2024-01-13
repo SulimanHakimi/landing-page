@@ -23,7 +23,7 @@
             </ul>
             <div class="searchInp">
                 <input type="text" placeholder="search..." name="searchInput" id="search">
-                <label id="searchIcons" for="search"><img src="./images/magnifying-glass-solid.svg" alt=""></label>
+                <label id="searchIcon" for="search"><img src="./images/magnifying-glass-solid.svg" alt=""></label>
 
             </div>
         </div>
@@ -33,6 +33,11 @@
         </div>
         <div class="Footer"></div>
     </div>
-    <script src="./app.js"></script>
+    <script>
+        let searchBtn = document.getElementById("searchIcon")
+        searchBtn.addEventListener("click", ()=>{
+            alert("The Search engine is now actived")
+        })
+    </script>
 </body>
 </html>
