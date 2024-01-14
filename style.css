@@ -7,6 +7,9 @@
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.contenar{
+    width: 100%;
+}
 
 /* nav start */
 .Nav{
@@ -46,7 +49,7 @@ background: rgb(241, 240, 240);
     list-style: none;
 }
 .s-nav ul li a{
-    font-size: 19x;
+    font-size: 19.5x;
     position: relative;
     font-weight: bold;
 }
@@ -82,10 +85,10 @@ background: rgb(241, 240, 240);
     font-size: 15px;
 }
 
-.searchInp label{
+.searchInp i{
     position: absolute;
-    top: 13px;
-    right: 20px;
+    top: 20px;
+    right: 15px;
     cursor: pointer;
 }
 .bars{
@@ -118,7 +121,6 @@ background: rgb(241, 240, 240);
 }
 #bars-ul .bug{
     top: 0;
-    width: 40px;
 }
 #bars-ul .searchInp input{
     padding: 20px 30px;
@@ -141,15 +143,111 @@ top: 13px;
 }
 .bug{
     position: absolute;
-    right: 0;
-    width: 80px;
+    right: 18px;
     transform: rotate(-135deg);
 }
+#home,#contact,#courses,#about{
+    height: 100vh;
+}
+#courses{
+    background: #000;
+}
+#contact{
+    background: gray;
+}
+#about{
+    background: red;
+}
+#home{
+    display: flex;
+}
+.l-page{
+    display: flex;
+    height: 100%;
+    gap: 100px;
+    align-items: center;
+    
+    position: relative;
+    width: 50%;
+}
+.l-page-top{
+    height: 60%;
+    margin-left: 80px;
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    gap: 30px;
+}
+.l-page-top .line{
+    height: 220px;
+    margin-bottom: 190px;
+    border-radius: 30px;
+    width: 5px;
+    background: #000;
+}
+.l-page-top-content{
+    height: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.l-page-top-content button{
+    width: fit-content;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 40px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    background: rgb(46, 46, 241);
+}
+.l-page-top-content button:hover{
+background: rgb(46, 46, 141);
+
+}
+.l-page-bottom{
+display: flex;
+position: absolute;
+bottom: 40px;
+left: 30px;
+gap: 20px;
+}
+.l-page-buttom i:hover{
+opacity: .8;
+}
+.main-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.color-span{
+    position: absolute;
+   width: 400px;
+   z-index: 6;
+   height: 450px;
+border-radius: 50%;
+   background: #000;
+}
+.main-img img{
+    width: 50%;
+    z-index: 9;
+    height: 60%;
+}
+
+
+
+
 /* main end */
 /* footer start */
 .Footer{
     height: 40vh;
-    background: rgb(235, 235, 235);
+    background: rgb(105, 69, 69);
 }
 
 /* footer end */
@@ -177,12 +275,9 @@ top: 13px;
         width: 150px;
     }
     
-    .searchInp label{
-        top: 10px;
-        right: 0px;
-    }
-    .bug{
-        width: 50px;
+    .searchInp i{
+        top: 17px;
+        right: -10px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -200,9 +295,8 @@ top: 13px;
         display: flex;
         cursor: pointer;
     }
-    .bug{
-        width: 50px;
-        transform: rotate(-135deg);  
+    .searchInp i{
+        top: 20px;
+        right: -30px;
     }
-
 }
