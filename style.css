@@ -72,25 +72,25 @@ background: rgb(241, 240, 240);
     position: relative;
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: fit-content;
 }
 
 #search{
-    padding:20px 15px;
+    padding:10px 15px;
     padding-right: 30px;
     border-radius: 10px;
     border: 1px solid black;
     outline: none;
-    height: 35px;
     font-size: 15px;
 }
 
 .searchInp i{
     position: absolute;
     top: 20px;
-    right: 15px;
+    right: 10px;
     cursor: pointer;
 }
+/* for mobile */
 .bars{
     display: none;
 }
@@ -122,13 +122,17 @@ background: rgb(241, 240, 240);
 #bars-ul .bug{
     top: 0;
 }
-#bars-ul .searchInp input{
-    padding: 20px 30px;
-    width: 250px;
+#bars-ul .searchInp{
+    width: 50%;
 }
-#bars-ul .searchInp label{
-left: 155px;
-top: 13px;
+#bars-ul .searchInp input{
+    padding: 15px 10px;
+    padding-right: 40px;
+    width: 70%;
+}
+#bars-ul .searchInp i{
+right:65px;
+top: 25px;
 }
 
 /* nav end */
@@ -214,7 +218,7 @@ background: rgb(46, 46, 141);
 display: flex;
 position: absolute;
 bottom: 40px;
-left: 30px;
+left: 70px;
 gap: 20px;
 }
 .l-page-bottom i:hover{
@@ -271,13 +275,13 @@ border-radius: 50%;
         width: 25%;
     }
     #search{
-        padding:0px 15px;
-        width: 150px;
+        padding:10px 15px;
+        width: 160px;
     }
     
     .searchInp i{
-        top: 17px;
-        right: 0px;
+        top: 20px;
+        right: -10px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -295,8 +299,47 @@ border-radius: 50%;
         display: flex;
         cursor: pointer;
     }
-    .searchInp i{
-        top: 20px;
-        right: -30px;
+    /* main */
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .l-page{
+        width: 90%;
+    }
+    .l-page-top{
+        height: 50%;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .l-page-top .line{
+        height: 200px;
+        margin-bottom: 135px;
+    }
+    .l-page-top-content{
+        margin-bottom: 0px;
+        gap: 40px;
+    }
+    .l-page-top-content.buttonDownload{
+        font-size: 16px;
+    }
+    .l-page-bottom{
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    }
+    .main-img{
+        width: 60%;
+        height: 50%;
+    }
+    .color-span{
+       width: 40%;
+       height: 40%;
+    }
+    .main-img img{
+        width: 60%;
+        height: 60%;
     }
 }
