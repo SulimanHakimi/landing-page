@@ -194,7 +194,7 @@ top: 13px;
     justify-content: center;
     gap: 40px;
 }
-.l-page-top-content button{
+.l-page-top-content .buttonDownload{
     width: fit-content;
     padding: 10px 15px;
     cursor: pointer;
@@ -206,7 +206,7 @@ top: 13px;
     font-size: 18px;
     background: rgb(46, 46, 241);
 }
-.l-page-top-content button:hover{
+.l-page-top-content .buttonDownload:hover{
 background: rgb(46, 46, 141);
 
 }
