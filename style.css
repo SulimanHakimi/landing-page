@@ -154,7 +154,7 @@ top: 25px;
     height: 100vh;
 }
 #courses{
-    background: #000;
+    background: #ece5e5;
 }
 #contact{
     background: gray;
@@ -283,6 +283,20 @@ border-radius: 50%;
         top: 20px;
         right: -10px;
     }
+    /* main */
+    .main-img{
+        margin-bottom: 80px;
+    }
+    .color-span{
+       width: 30%;
+       z-index: 6;
+       height: 50%;
+    }
+    .main-img img{
+        width: 50%;
+        z-index: 9;
+        height: 40%;
+    }
 }
 @media screen and (max-width: 800px) {
     .Nav{
@@ -300,8 +314,10 @@ border-radius: 50%;
         cursor: pointer;
     }
     /* main */
+    #home,#contact,#courses,#about{
+        display: none;
+    }
     #home{
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
