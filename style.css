@@ -274,7 +274,11 @@ height: 90%;
 }
 /* contact */
 #contact{
-    background: gray;
+    background: rgb(228, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
 /* about */
 #about{
@@ -302,7 +306,7 @@ height: 90%;
 }
 #about .about-text a{
     padding: 14px 24px;
-    background: #454246;
+    background: #8b898b;
     font-size: 20px;
     font-weight: bolder;
     border-radius: 5px;
@@ -378,6 +382,9 @@ height: 90%;
         z-index: 9;
         height: 40%;
     }
+    .Footer{
+        display: none;
+    }
 }
 @media screen and (max-width: 800px) {
     .Nav{
@@ -438,5 +445,8 @@ height: 90%;
     .main-img img{
         width: 60%;
         height: 60%;
+    }
+    .Footer{
+        display: none;
     }
 }
